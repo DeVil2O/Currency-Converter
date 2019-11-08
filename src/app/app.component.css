@@ -1,13 +1,12 @@
-.heading h1{
-    margin: 19px 200px;
-    font-size: 80px;
-    font-family: 'Muli', sans-serif;
+.whole{
+    position: absolute;
+    height: 31em;
+    width: 67.3em;
+    background-color: #100e17;
 }
-
-input[type=text]{
-    margin: 39px 400px;
-    width: 40%;
-    padding: 12px 20px;
-    border-radius: 20px;
-    outline: none;
+.heading p{
+    position: relative;
+    font-size: 3.5em;
+    color: white;
+    text-align: center;
 }
