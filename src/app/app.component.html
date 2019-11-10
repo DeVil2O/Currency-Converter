@@ -11,20 +11,21 @@
         </select>
     </div>
     <div class="currencyValue">
-      <input type="text" placeholder="Enter The Value...">
+      <input type="text" placeholder="Enter The Value..." (input)="onUpdateCurrencyValue($event)">
+      <!-- <app-loading-screen></app-loading-screen> -->
     </div>
   </div>
   <div class="to">
     <p>TO</p>
     <div class="currencyName">
         <select id="currency">
-            <option value="hide">-- CURRENCY --</option>
-            <option value="dollar" rel="icon-temperature">Dollar</option>
-            <option value="yen">Yen</option>
+            <option class="box" value="hide">-- CURRENCY --</option>
+            <option class="box" value="dollar" rel="icon-temperature">Dollar</option>
+            <option class="box" value="yen">Yen</option>
         </select>
     </div>
     <div class="currencyValue">
-      <input type="text" placeholder="Enter The Value...">
+      <p>{{ currencyValue }}</p>
     </div>
   </div>      
 </div>

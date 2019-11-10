@@ -6,6 +6,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./loading-screen.component.css']
 })
 export class LoadingScreenComponent implements OnInit{
+  currencyShowingStatus = 'no currency';
 
   constructor() { }
 
