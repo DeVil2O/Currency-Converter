@@ -7,14 +7,17 @@
     overflow-y: hidden;
 }
 .heading p{
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: relative;
     font-size: 3.5em;
     color: white;
     text-align: center;
+    text-transform: uppercase;
 }
 .currencyName select{
     border-radius: 20px;
-    
 }
 .currencyValue input[type=text]{
     border-radius: 20px;
@@ -86,4 +89,8 @@
     top: .25em;
     left: 1em;
     color: black;
+}
+.characterC{
+    width: .2em;
+    height: 6em;
 }
