@@ -17,10 +17,14 @@
 .currencyValue input[type=text]{
     border-radius: 20px;
 }
+::placeholder{
+    color:black;
+}
 .from .currencyName select{
     width: 13em;
     height: 3.5em;
     position: relative;
+    padding-left: 2.5em;
     left: 6em;
     background-color: tomato;
     border-color: #100e17;
@@ -28,8 +32,9 @@
     outline: none;
 }
 .from .currencyValue input[type=text]{
-    width: 28em;
+    width: 25em;
     height: 3.5em;
+    padding-left: .75em;
     position: relative;
     left: 24em;
     top: -3.62em;
@@ -49,6 +54,7 @@
     width: 13em;
     height: 3.5em;
     position: relative;
+    padding-left: 2.5em;
     left: 6em;
     background-color: tomato;
     border-color: #100e17;
@@ -57,8 +63,9 @@
     top: -6em;
 }
 .to .currencyValue input[type=text]{
-    width: 28em;
+    width: 25em;
     height: 3.5em;
+    padding-left: .75em;
     position: relative;
     left: 24em;
     top: -9.62em;
