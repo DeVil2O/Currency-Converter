@@ -3,10 +3,67 @@
     height: 31em;
     width: 67.3em;
     background-color: #100e17;
+    overflow: hidden;
 }
 .heading p{
     position: relative;
     font-size: 3.5em;
     color: white;
     text-align: center;
+}
+.currencyName select{
+    border-radius: 20px;
+}
+.currencyValue input[type=text]{
+    border-radius: 20px;
+}
+.from .currencyName select{
+    width: 13em;
+    height: 3.5em;
+    position: relative;
+    left: 6em;
+    background-color: tomato;
+    border-color: #100e17;
+    font-size: 1.2em;
+    outline: none;
+}
+.from .currencyValue input[type=text]{
+    width: 28em;
+    height: 3.5em;
+    position: relative;
+    left: 24em;
+    top: -3.62em;
+    background-color: tomato;
+    border-color: #100e17;
+    font-size: 1.2em;
+    outline: none;
+}
+.to p{
+    font-size: 3em;
+    color: white;
+    position: relative;
+    left: 8em;
+    top: -2em;
+}
+.to .currencyName select{
+    width: 13em;
+    height: 3.5em;
+    position: relative;
+    left: 6em;
+    background-color: tomato;
+    border-color: #100e17;
+    font-size: 1.2em;
+    outline: none;
+    top: -6em;
+}
+.to .currencyValue input[type=text]{
+    width: 28em;
+    height: 3.5em;
+    position: relative;
+    left: 24em;
+    top: -9.62em;
+    background-color: tomato;
+    border-color: #100e17;
+    font-size: 1.2em;
+    outline: none;
 }
