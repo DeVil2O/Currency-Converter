@@ -1,19 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .whole{
     position: absolute;
-    height: 31em;
-    width: 67.3em;
+    height: 100vh;
+    width: 100vw;
     background-color: #100e17;
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.heading p{
+.heading .half1{
+    display: none;
+}
+.heading .half2{
+    display: none;
+}
+.heading .full p{
     background: -webkit-linear-gradient(#eee, #333);
+    background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
     font-size: 3.5em;
     color: white;
     text-align: center;
+    vertical-align: middle;
     text-transform: uppercase;
 }
 .currencyName select{
@@ -25,72 +37,118 @@
 ::placeholder{
     color:black;
 }
-.from .currencyName select{
-    /* margin-top: 200px; */
-    width: 13em;
-    height: 3.5em;
+.from .currencyName .button{
+    width: 10em;
+    height: 3.9em;
     position: relative;
-    padding-left: 2.5em;
-    left: 6em;
-    background-color: tomato;
-    border-color: #100e17;
-    font-size: 1.2em;
+    left: 7em;
+    background-image: linear-gradient(red, yellow);
+    background-color: orangered;
+    border: #100e17;
+    transition: 1.9s;
+    border-radius: 20px;
+    cursor: pointer;
     outline: none;
 }
+.from .currencyName .button:hover{
+    background-image: none;
+    background-color: blue;
+    color: blanchedalmond;
+}
 .from .currencyValue input[type=text]{
-    width: 25em;
-    height: 3.5em;
+    width: 24.2em;
+    height: 3.9em;
     padding-left: .75em;
     position: relative;
-    left: 24em;
-    top: -3.62em;
-    background-color: tomato;
+    left: 23em;
+    top: -4em;
+    background-image: linear-gradient(red, yellow);
     border-color: #100e17;
-    font-size: 1.2em;
+    font-size: .75566633333333333333em;
     outline: none;
 }
 .to p{
-    font-size: 3em;
+    font-size: 2.6rem;
     color: white;
     position: relative;
-    left: 8em;
-    top: -2em;
+    left: 13rem;
+    top: -5rem;
 }
-.box{
-    background-color: dodgerblue;
-    padding: 1em;
-}
-.to .currencyName select{
-    width: 13em;
-    height: 3.5em;
+.to .currencyName .button{
+    width: 10em;
+    height: 3.9em;
     position: relative;
-    padding-left: 2.5em;
-    left: 6em;
-    background-color: tomato;
-    border-color: #100e17;
-    font-size: 1.2em;
-    outline: none;
-    top: -6em;
-}
-.to .currencyValue{
-    width: 31em;
-    height: 4.3em;
-    position: relative;
-    left: 29em;
-    top: -11.4em;
-    background-color: tomato;
-    border-color: #100e17;
-    outline: none;
+    left: 7em;
+    top: -10em;
+    background-image: linear-gradient(red, yellow);
+    background-color: orangered;
+    border: #100e17;
     border-radius: 20px;
+    cursor: pointer;
+    transition: 1.9s;
+    outline: none;
+}
+.to .currencyName .button:hover{
+    background-image: none;
+    background-color: blue;
+    color: blanchedalmond;
+}
+.to .currencyValue input[type=text]{
+    width: 24.2em;
+    height: 3.9em;
+    padding-left: .75em;
+    position: relative;
+    left: 23em;
+    top: -13.75em;
+    background-image: linear-gradient(red, yellow);
+    border-color: #100e17;
+    font-size: .75566633333333333333em;
+    outline: none;
 }
 .to .currencyValue p{
-    font-size: 1.2em;
+    font-size: .89em;
     position: absolute;
-    top: .25em;
-    left: 1em;
+    top: 0.05em;
+    left: .7em;
     color: black;
 }
-.characterC{
-    width: .2em;
-    height: 6em;
+@media (max-width: 840px){
+    .heading .half1{
+        display: block;
+        background: -webkit-linear-gradient(#eee, #333);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        font-size: 3em;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+    .heading .half2{
+        display: block;
+        background: -webkit-linear-gradient(#eee, #333);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        font-size: 3em;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+    .heading .full p{
+        display: none;
+    }
+}
+.image img{
+    width:20vw;
+    position: absolute;
+    top: 25%;
+    padding: 1.5%;
+    object-fit: contain;
+    border-radius: 50%;
+    right: 15%;
 }

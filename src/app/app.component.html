@@ -1,14 +1,12 @@
 <div class="whole">
   <div class="heading">
-    <p>￠URR€￠NY&nbsp;&nbsp;&nbsp;￠ONV€RT€R</p>
+    <div class="half1"><p>&#65504;URR€&#65504;NY</p></div>
+    <div class="half2"><p>&#65504;ONV€RT€R</p></div>
+    <div class="full"><p>&#65504;URR€&#65504;NY&nbsp;&nbsp;&nbsp;&#65504;ONV€RT€R</p></div>
   </div>
   <div class="from">
     <div class="currencyName">
-        <select id="currency">
-            <option value="hide">-- CURRENCY --</option>
-            <option value="dollar" rel="icon-temperature">Dollar</option>
-            <option value="yen">Yen</option>
-        </select>
+        <button type="submit" class="button">CURRENCY</button>
     </div>
     <div class="currencyValue">
       <input type="text" placeholder="Enter The Value..." (input)="onUpdateCurrencyValue($event)">
@@ -18,14 +16,11 @@
   <div class="to">
     <p>TO</p>
     <div class="currencyName">
-        <select id="currency">
-            <option class="box" value="hide">-- CURRENCY --</option>
-            <option class="box" value="dollar" rel="icon-temperature">Dollar</option>
-            <option class="box" value="yen">Yen</option>
-        </select>
+        <button type="submit" class="button">CURRENCY</button>
     </div>
     <div class="currencyValue">
-      <p>{{ currencyValue }}</p>
+        <input type="text" placeholder="{{ currencyValue }}">
     </div>
-  </div>      
+  </div>
+  <div class="image"><img src="assets/Images/devil.jpg"></div>
 </div>
